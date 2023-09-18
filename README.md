@@ -93,7 +93,7 @@ The API can be used by simply importing the module and querying data, since vers
 
 ## Bugs & Issues
 
-This project is very much still a work in progress, please report any issues via the [GitHub issues page](https://github.com/whatadewitt/yfsapi/issues).
+This project is very much still a work in progress, please report any issues via the [GitHub issues page](https://github.com/ngud-0119/sport-api/issues).
 
 ## Changelog
 
@@ -103,7 +103,7 @@ This project is very much still a work in progress, please report any issues via
 
 ### 5.2.0
 
-- Add support for `lastweek` and `lastmonth` as arguments in `player.stats` resource (Thanks to [nosecreek](https://github.com/nosecreek)!)
+- Add support for `lastweek` and `lastmonth` as arguments in `player.stats` resource (Thanks to [nosecreek](https://github.com/ngud-0119)!)
 
 ### 5.1.0
 
@@ -119,23 +119,23 @@ This project is very much still a work in progress, please report any issues via
 - Fixed a bug where querying player stats for a given week wasn't working.
 - Updated the `player.stats` function to accept a week OR a date (format `yyyy-mm-dd`) as the 2nd param.
 - Fixed a bug that would cause the function to fail silently if trying to request stats for a given `week` for players outside of the NFL (for this you can just get the weeks from the game settings and make multiple queries for each day of the week).
-- Fixes [Issue #79](https://github.com/whatadewitt/yahoo-fantasy-sports-api/issues/79) (Big thanks to [jimweigandt](https://github.com/jimweigandt) and [rdbaron](https://github.com/rdbaron) for the help finding / debugging the issue)
+- Fixes [Issue #79](https://github.com/ngud-0119/yahoo-fantasy-sports-api/issues/79) (Big thanks to [jimweigandt](https://github.com/jimweigandt) and [rdbaron](https://github.com/rdbaron) for the help finding / debugging the issue)
 
 ### 4.1.5
 
-- Fixed a bug where certain league settings were not loading properly for some older leagues. (merge [PR #80](https://github.com/whatadewitt/yahoo-fantasy-sports-api/pull/80)) (Thanks [connor4312](https://github.com/connor4312))
+- Fixed a bug where certain league settings were not loading properly for some older leagues. (merge [PR #80](https://github.com/ngud-0119/yahoo-fantasy-sports-api/pull/80)) (Thanks [connor4312](https://github.com/connor4312))
 
 ### 4.1.4
 
-- Fixed a bug where the response from the token refresh was not being included in the promise chain. (merge [PR #78](https://github.com/whatadewitt/yahoo-fantasy-sports-api/pull/78)) (Thanks [connor4312](https://github.com/connor4312))
+- Fixed a bug where the response from the token refresh was not being included in the promise chain. (merge [PR #78](https://github.com/ngud-0119/yahoo-fantasy-sports-api/pull/78)) (Thanks [connor4312](https://github.com/connor4312))
 
 ### 4.1.3
 
-- Fixed a bug where Yahoo! apparently no longer requires `;type=week` when building a URL for team.stats and player.stats, leading to no stats coming back for those resources ([Issue #70](https://github.com/whatadewitt/yfsapi/issues/70"))
+- Fixed a bug where Yahoo! apparently no longer requires `;type=week` when building a URL for team.stats and player.stats, leading to no stats coming back for those resources ([Issue #70](https://github.com/ngud-0119/sport-api/issues/70"))
 
 #### 4.1.2
 
-- Fixed bug where "selected position" was no longer working due to a change in the data format coming from Yahoo! (merge [PR #69](https://github.com/whatadewitt/yahoo-fantasy-sports-api/pull/69)) (Thanks [brisberg](https://github.com/brisberg))
+- Fixed bug where "selected position" was no longer working due to a change in the data format coming from Yahoo! (merge [PR #69](https://github.com/ngud-0119/yahoo-fantasy-sports-api/pull/69)) (Thanks [brisberg](https://github.com/brisberg))
 
 #### 4.1.1
 
@@ -170,7 +170,7 @@ This project is very much still a work in progress, please report any issues via
 
 #### 3.1.1
 
-- Resolve error when no team logo is present ([Issue #42](https://github.com/whatadewitt/yfsapi/issues/42))
+- Resolve error when no team logo is present ([Issue #42](https://github.com/ngud-0119/sport-api/issues/42))
 
 #### 3.1.0
 
@@ -178,13 +178,13 @@ This project is very much still a work in progress, please report any issues via
 
 #### 3.0.4
 
-- Fixed a bug in the players.league collection call where it was trying to use split on an array... ([Issue #46](https://github.com/whatadewitt/yfsapi/pull/46")).
+- Fixed a bug in the players.league collection call where it was trying to use split on an array... ([Issue #46](https://github.com/ngud-0119/sport-api/pull/46")).
 - Fixed similar bugs in other places...
 
 #### 3.0.3
 
 - Added the ability to specify a date or week when querying the `team.stats` resource.
-- Unit test fixes ([Issue #42](https://github.com/whatadewitt/yfsapi/issues/42)). Thanks [Marios](https://github.com/ryus08)!
+- Unit test fixes ([Issue #42](https://github.com/ngud-0119/sport-api/issues/42)). Thanks [Marios](https://github.com/ryus08)!
 - Updated "vulnerable" dependencies.
 
 #### 3.0.2
@@ -232,7 +232,7 @@ This project is very much still a work in progress, please report any issues via
 #### 1.0.0
 
 - Breaking changes
-- Fixed NFL scoreboard/matchups bug ([Issue #19](https://github.com/whatadewitt/yfsapi/issues/19))
+- Fixed NFL scoreboard/matchups bug ([Issue #19](https://github.com/ngud-0119/sport-api/issues/19))
 - In fixing this bug I realized that my "team" set up was really only useful for MLB fantasy, so I rewrote team mapping to work better across all sports and give additional details that weren't previously reported. This will cause errors if you are using the team.manager attribute in your code.
 
 #### 0.5.3
